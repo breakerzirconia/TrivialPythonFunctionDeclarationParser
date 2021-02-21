@@ -1,0 +1,42 @@
+graph ""
+  {
+  label="''def _name(a1, a2: type2, a3 :NoneType) -> str =''"
+  n1 ;
+  n1 [label="Def"] ;
+  n1 -- n2 ;
+  n2 [label="''_name''"] ;
+  n1 -- n3 ;
+  n3 [label=":"] ;
+  n3 -- n4 ;
+  n4 [label="(,)"] ;
+  n4 -- n5 ;
+  n5 [label="''a1''"] ;
+  n4 -- n6 ;
+  n6 [label="Nothing"] ;
+  n3 -- n7 ;
+  n7 [label=":"] ;
+  n7 -- n8 ;
+  n8 [label="(,)"] ;
+  n8 -- n9 ;
+  n9 [label="''a2''"] ;
+  n8 -- n10 ;
+  n10 [label="Just"] ;
+  n10 -- n11 ;
+  n11 [label="''type2''"] ;
+  n7 -- n12 ;
+  n12 [label=":"] ;
+  n12 -- n13 ;
+  n13 [label="(,)"] ;
+  n13 -- n14 ;
+  n14 [label="''a3''"] ;
+  n13 -- n15 ;
+  n15 [label="Just"] ;
+  n15 -- n16 ;
+  n16 [label="''NoneType''"] ;
+  n12 -- n17 ;
+  n17 [label="[]"] ;
+  n1 -- n18 ;
+  n18 [label="Just"] ;
+  n18 -- n19 ;
+  n19 [label="''str''"] ;
+  }
